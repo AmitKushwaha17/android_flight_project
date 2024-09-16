@@ -3,37 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/gradientcolor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".userscreen">
 
-    <ImageView
-        android:id="@+id/logout"
-        android:layout_width="55dp"
-        android:layout_height="53dp"
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="377dp"
+        android:layout_height="261dp"
+        android:background="@drawable/imageslidershape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654"
-        app:srcCompat="@drawable/img_1" />
+        app:layout_constraintVertical_bias="0.076"
+        android:id="@+id/viewPager">
 
-    <TextView
-        android:id="@+id/end"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:text="LOG OUT"
-        android:textAlignment="center"
-        android:textColor="#275172"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+    </androidx.viewpager2.widget.ViewPager2>
 
     <ImageView
         android:id="@+id/mybooking"
@@ -47,34 +34,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.432"
         app:srcCompat="@drawable/mybooking" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="135dp"
-        android:layout_height="41dp"
-        android:text="BOOK FLIGHT"
-        android:textAlignment="center"
-        android:textColor="#275172"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518" />
-
-    <ImageView
-        android:id="@+id/bookflight"
-        android:layout_width="134dp"
-        android:layout_height="124dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42"
-        app:srcCompat="@drawable/book" />
 
     <TextView
         android:id="@+id/text"
@@ -99,11 +58,67 @@
         android:layout_height="124dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42"
+        app:layout_constraintVertical_bias="0.589"
         app:srcCompat="@drawable/support" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="41dp"
+        android:text="BOOK FLIGHT"
+        android:textAlignment="center"
+        android:textColor="#275172"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
+
+    <TextView
+        android:id="@+id/end"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:textAlignment="center"
+        android:textColor="#275172"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806"
+        app:srcCompat="@drawable/img_1" />
+
+    <ImageView
+        android:id="@+id/bookflight"
+        android:layout_width="134dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589"
+        app:srcCompat="@drawable/book" />
 
     <TextView
         android:id="@+id/support"
@@ -116,8 +131,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintVertical_bias="0.677" />
 </androidx.constraintlayout.widget.ConstraintLayout>

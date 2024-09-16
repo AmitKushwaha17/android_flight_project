@@ -3,39 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/plane4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".register_page">
-
-    <TextView
-        android:id="@+id/emailtv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" />
-
-    <TextView
-        android:id="@+id/lnametv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Last name :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
 
     <Button
         android:id="@+id/register"
@@ -50,21 +21,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942" />
 
-    <TextView
-        android:id="@+id/retypetv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Re-type :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
-
     <EditText
         android:id="@+id/mobile"
         android:layout_width="240dp"
@@ -72,31 +28,17 @@
         android:ems="10"
         android:hint="Mobile Number"
         android:inputType="number"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
         android:textColorHighlight="#787878"
         android:textColorHint="#888888"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
-
-    <TextView
-        android:id="@+id/fnametv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First Name :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <EditText
         android:id="@+id/emailaddress"
@@ -105,46 +47,17 @@
         android:ems="10"
         android:hint="E-Mail"
         android:inputType="textEmailAddress"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
         android:textColorHighlight="#787878"
         android:textColorHint="#888888"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
-
-    <TextView
-        android:id="@+id/passwordtv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.486" />
-
-    <TextView
-        android:id="@+id/usernametv"
-        android:layout_width="115dp"
-        android:layout_height="36dp"
-        android:text="Username :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.381" />
 
     <EditText
         android:id="@+id/lastname"
@@ -153,16 +66,17 @@
         android:ems="10"
         android:hint="last name"
         android:inputType="text"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
         android:textColorHighlight="#787878"
         android:textColorHint="#888888"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <EditText
         android:id="@+id/username"
@@ -171,31 +85,17 @@
         android:ems="10"
         android:hint="unique username"
         android:inputType="text"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
         android:textColorHighlight="#787878"
         android:textColorHint="#888888"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386" />
-
-    <TextView
-        android:id="@+id/Mobiletv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mobile No :"
-        android:textColor="#000000"
-        android:textColorLink="#000000"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.61" />
 
     <EditText
         android:id="@+id/firstname"
@@ -203,14 +103,15 @@
         android:layout_height="56dp"
         android:ems="10"
         android:hint="first name"
+        android:background="@drawable/rounded_edittext"
         android:inputType="text"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <EditText
         android:id="@+id/password"
@@ -219,16 +120,17 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
         android:textColorHighlight="#787878"
         android:textColorHint="#888888"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.468" />
+        app:layout_constraintVertical_bias="0.728" />
 
     <EditText
         android:id="@+id/retype"
@@ -237,14 +139,15 @@
         android:ems="10"
         android:hint="Re type"
         android:inputType="textPassword"
-        android:textColor="#b3ebf1"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_edittext"
         android:textColorHighlight="#787878"
         android:textColorHint="#888888"
         android:textColorLink="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintVertical_bias="0.839" />
 </androidx.constraintlayout.widget.ConstraintLayout>
