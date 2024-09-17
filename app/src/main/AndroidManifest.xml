@@ -13,11 +13,22 @@
         android:theme="@style/Theme.Intent"
         tools:targetApi="31">
         <activity
+            android:name=".splash"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+        </activity>
+        <activity
             android:name=".mybookings"
             android:exported="false"
             android:theme="@style/Theme.Intent">
+
         </activity>
-                <activity
+        <activity
             android:name=".booking_flight2"
             android:exported="false" />
         <activity
@@ -28,11 +39,7 @@
         <activity
             android:name=".userscreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".flightmanage"

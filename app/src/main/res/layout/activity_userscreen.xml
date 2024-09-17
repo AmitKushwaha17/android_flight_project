@@ -9,16 +9,18 @@
     tools:context=".userscreen">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="377dp"
-        android:layout_height="261dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
         android:background="@drawable/imageslidershape"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.076"
-        android:id="@+id/viewPager">
+        app:layout_constraintVertical_bias="0.076">
 
     </androidx.viewpager2.widget.ViewPager2>
 
@@ -66,8 +68,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="135dp"
-        android:layout_height="41dp"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/warmtea"
         android:text="BOOK FLIGHT"
         android:textAlignment="center"
         android:textColor="#275172"
@@ -75,10 +78,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668" />
+        app:layout_constraintVertical_bias="0.701" />
 
     <TextView
         android:id="@+id/end"
@@ -89,6 +92,7 @@
         android:textColor="#275172"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:fontFamily="@font/warmtea"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.231"
@@ -110,15 +114,15 @@
 
     <ImageView
         android:id="@+id/bookflight"
-        android:layout_width="134dp"
-        android:layout_height="124dp"
+        android:layout_width="217dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589"
-        app:srcCompat="@drawable/book" />
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@drawable/bookk" />
 
     <TextView
         android:id="@+id/support"
@@ -128,6 +132,7 @@
         android:textAlignment="center"
         android:textColor="#275172"
         android:textSize="20dp"
+        android:fontFamily="@font/warmtea"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,4 +140,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="186dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/angelreg"
+        android:rotation="-30"
+        android:text=" A Waves"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

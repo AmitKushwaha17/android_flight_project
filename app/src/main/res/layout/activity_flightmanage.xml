@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/bgmo"
     android:layout_height="match_parent"
     tools:context=".flightmanage">
 
@@ -171,6 +172,8 @@
             android:layout_width="185dp"
             android:layout_height="60dp"
             android:text="Submit"
+            android:fontFamily="@font/swanseabold"
+            android:backgroundTint="#6A0404"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
@@ -254,6 +257,9 @@
         android:layout_height="wrap_content"
         android:text="UPDATE"
         android:visibility="visible"
+        android:fontFamily="@font/swanseabold"
+
+        android:backgroundTint="#6A0404"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -266,6 +272,8 @@
         android:layout_height="wrap_content"
         android:text="DELETE"
         android:visibility="visible"
+        android:fontFamily="@font/swanseabold"
+        android:backgroundTint="#6A0404"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
@@ -279,6 +287,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
         android:text="ADD"
+        android:fontFamily="@font/swanseabold"
+        android:backgroundTint="#6A0404"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
@@ -290,6 +300,10 @@
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#FF9898"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
         app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -312,7 +326,8 @@
                     android:textColor="@color/black"
                     android:text="hello"
                     android:textSize="10dp"
-                    android:textStyle="normal"></TextView>
+                    android:textStyle="normal">
+                </TextView>
 
     </ScrollView>
 

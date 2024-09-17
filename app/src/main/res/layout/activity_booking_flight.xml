@@ -4,119 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/userplane"
     android:layout_height="match_parent"
     tools:context=".booking_flight">
+
     <TextView
         android:id="@+id/fromtv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="From :"
-        android:textColor="@color/black"
+        android:text="From"
+        android:textColor="#041A8A"
+
         android:textSize="25dp"
+        android:fontFamily="@font/basoteregular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.111" />
 
     <TextView
         android:id="@+id/totv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To :"
-        android:textColor="@color/black"
+        android:textColor="#041A8A"
         android:textSize="25dp"
+        android:fontFamily="@font/basoteregular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.133" />
-
-    <TextView
-        android:id="@+id/datetimetv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Filter :"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223" />
+        app:layout_constraintVertical_bias="0.258" />
 
     <AutoCompleteTextView
         android:id="@+id/from"
-        android:layout_width="229dp"
-        android:layout_height="54dp"
+        android:layout_width="252dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
-        android:inputType="text"
         android:hint="destination from"
+        android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.641"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.086" />
 
     <AutoCompleteTextView
         android:id="@+id/to"
-        android:layout_width="229dp"
-        android:layout_height="54dp"
+        android:layout_width="252dp"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:hint="destination To"
         android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.641"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
-
-    <EditText
-        android:id="@+id/filter"
-        android:layout_width="229dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:hint="Filter"
-        android:inputType="text"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.243" />
 
     <Button
         android:id="@+id/Search"
-        android:layout_width="323dp"
-        android:layout_height="54dp"
+        android:layout_width="355dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#020580"
         android:text="Search"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="454dp"
+        android:layout_height="400dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="1dp">
+        tools:layout_editor_absoluteX="-6dp">
 
         <ListView
+            android:id="@+id/chart"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/chart"/>
+            android:layout_height="match_parent">
+
+
+        </ListView>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

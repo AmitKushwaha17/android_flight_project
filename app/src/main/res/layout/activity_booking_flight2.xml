@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/userplanebeyond"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".booking_flight2">
@@ -31,6 +32,7 @@
         android:hint="Mobile Number"
         android:inputType="number"
         android:textColorHint="@color/black"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.123"
@@ -74,6 +76,8 @@
         android:layout_width="371dp"
         android:layout_height="53dp"
         android:text="Confirm and Pay"
+        android:textSize="20dp"
+        android:backgroundTint="#0227AD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -99,11 +103,13 @@
         android:layout_height="wrap_content"
         android:text="FLIGHT DETAILS"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:fontFamily="@font/swanseabold"
+        android:textColor="#04066F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.037" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     <style name="Base.Theme.Intent" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="editTextStyle">@style/CustomEditText</item>
     </style>
 
     <style name="Theme.Intent" parent="Base.Theme.Intent" />

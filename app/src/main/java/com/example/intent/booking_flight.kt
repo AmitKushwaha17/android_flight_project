@@ -28,6 +28,11 @@ class booking_flight : AppCompatActivity() {
         val edto = findViewById<AutoCompleteTextView>(R.id.to)
         val search = findViewById<Button>(R.id.Search)
         flightListView =findViewById(R.id.chart)
+
+
+        //font
+
+
         val cities = db.fetchCitiesFromDatabase()
         val adapter = ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,cities)
         edfrom.setAdapter(adapter)

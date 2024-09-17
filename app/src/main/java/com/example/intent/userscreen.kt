@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
 
 class userscreen : AppCompatActivity() {
@@ -22,9 +19,9 @@ class userscreen : AppCompatActivity() {
         val logout = findViewById<ImageView>(R.id.logout)
 
         val images = listOf(
-            R.drawable.qoute1,
-            R.drawable.quotes2,
-            R.drawable.quotes3,
+            R.drawable.q1,
+            R.drawable.q2,
+            R.drawable.q3,
             R.drawable.quates4,
             R.drawable.quotes5
         )
